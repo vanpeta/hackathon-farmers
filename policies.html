@@ -6,26 +6,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="policies.css">
 </head>
 <body>
 
 <div class="container">
-  <h2> Farmers insta quote</h2>
-  <p></p>
-  <form>
-    <div class="form-group">
-      <label for="usr">Car model</label>
-      <input type="text" class="form-control" id="usr">
-        <label for="pwd">Year </label>
-      <input type="password" class="form-control" id="pwd">
-<button onclick="myFunction()">submit</button>
+  <div class=row>
+    <div class="logo">
+      <img src="farmers-logo.png">
+    </div>
+    <div class="title">
+      <h1>Farmers insta quote</h1>
+    </div>
+  </div>
+  <div class="row">
+      <form action="javascript:void(0);">
+        <div class="form-group">
+          <div>
+            <label for="year">Car Year</label>
+            <input type="text" class="form-control" id="year">
+          </div>
+          <div>
+            <label for="year">Car Make</label>
+            <input type="text" class="form-control" id="make">
+          </div>
+          <div>
+            <label for="year">Car Model</label>
+            <input type="text" class="form-control" id="model">
+          </div>
+          <div>
+            <button onclick="formSubmission()">Submit</button>
+          </div>
+        </div>
+      </form>
+  </div>
+  <div class="row" id="initial-quote">
 
-    </div>
-    <div class="form-group">
-      <label for="pwd"> </label>
-      <input type="password" class="form-control" id="pwd">
-    </div>
-  </form>
+  </div>
 </div>
 
 
